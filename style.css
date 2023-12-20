@@ -78,7 +78,7 @@
          border-radius: 0 7px 7px 0 ;
          background: linear-gradient( hsla(260, 51%, 55% ,0.5) 0%, hsla(260, 51%, 55%, 0.5) 100%),
          
-         url(/images/image-header-desktop.jpg) center no-repeat;
+         url(image-header-desktop.jpg) center no-repeat;
          background-size: cover;
 } 
 
