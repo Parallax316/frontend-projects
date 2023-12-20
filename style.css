@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+
+}
+
+:root{
+    --main-bg: hsl(233, 47%, 7%);
+    --card-bg: hsl(244, 38%, 16%);
+    --accent  :  hsl(260, 51%, 55%);
+    --head-bg : hsl(0, 0%, 100%);
+    --paragr : hsla(0, 0%, 100%, 0.75);
+    --stat-head : hsla(0, 0%, 100%, 0.6);
+}
+.stats{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+    background-color: var(--main-bg);
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items:  center;
+    justify-items: center;
+}
+.card {
+    background-color: var(--card-bg);
+    width : 70vw;
+    margin-left: 15%;
+    display: flex;
+    border-radius: 7px;
+}
+
+.card .des{
+    width : 50vw;
+    padding: 4rem;
+
+}
+.card .des .heading h1 {
+    color: var(--head-bg);
+    font-size: 2rem;
+
+}
+.card .des .heading span {
+    color: var(--accent);
+    font-size: 2rem;
+}
+.card .des .paragrap {
+    color: var(--paragr);
+    margin: 1.5rem 0 3rem 0;
+}
+.card .stats{
+    display: flex;
+    justify-content: space-between;
+}
+.card .stats .num h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--head-bg);
+}
+.card .stats .text p{
+    
+    color: var(--stat-head);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-right: 25px;
+
+}
+.card .img {
+         width: 50vw;
+         border-radius: 0 7px 7px 0 ;
+         background: linear-gradient( hsla(260, 51%, 55% ,0.5) 0%, hsla(260, 51%, 55%, 0.5) 100%),
+         
+         url(/images/image-header-desktop.jpg) center no-repeat;
+         background-size: cover;
+} 
+
+/*responsivess */
+
+@media (max-width: 400px){
+    .card {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 90vw;
+        height : 90vh;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .card .des{
+        width: auto;
+        text-align: center;
+        height: 70%;
+        padding: 1.5rem;
+
+    }
+    .card .stats {
+        flex-direction: column;
+    }
+    .card .stats .num,
+    .card .stats .text {
+        margin-bottom: 1rem;
+        flex-grow: 0
+    }
+    .card .img{
+        width: 100%;
+        height: 30%;
+    }
+    
+
+}
